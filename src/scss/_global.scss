@@ -1,0 +1,35 @@
+.main
+{
+    display: grid;
+    grid-template-rows: 100px 1fr 50px;
+    grid-row-gap: 10px; 
+    min-height: 100vh;
+    padding: 0 0 0 50px;
+}
+
+.site_header{
+
+}
+
+.navigation {
+    &__list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+    }
+    &__item{
+        display: block;
+        margin: 0 8px;
+    }
+}
+
+.footer{
+    background-color: rgba(170, 144, 144, 0.521);
+    display: flex;
+    padding: 15px;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+}

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="body notatkiWTF__body">
+    <main class="main notatkiWTF__main">
+        <header class="site_header">
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="kalendarzWzor.html">Kalendarze</a></li>
+                    <li class="navigation__item"><a href="index.html">Strona domowa</a></li>
+                </ul>
+            </nav>
+        </header>
+        <content>
+            <article>
+                <h3>Tydzień 2<br></h3>
+                <strong>02.03 WTF:HTML<br></strong>
+                - po utworzeniu nowego pliku HTML - "!+TAB" i ustawić język strony<br>
+                - main<br>
+                - sekcje strony - header, section, footer<br>
+                - h1-h6 - tekstowe nagłówki tytułowe - dokumentu / sekcji<br>
+                - formatowanie kodu - Ctrl+Shift+P i Format Document<br>
+                - znacznik p - paragraf<br>
+                - menu View i Toggle Word Wrap - zawija tesks eliminując scroll poziomy w Visual Studio Code<br>
+                - znacznik br - nowa linia<br>
+                - <a href="https://validator.w3.org/nu/#textarea">weryfikacja poprawności HTML</a><br> 
+            </article>
+            <article>
+                <h3>Tydzień 3<br></h3>
+                <strong>03.03 WTF:HTML 2<br></strong>
+                - article - samodzielna treść<br>
+                - znacznik b - pogrubienie <strong>nie</strong>istotne semantycznie<br>
+                - znacznik i - kursywa <strong>nie</strong>istotne semantycznie<br>
+                - znacznik strong - pogrubienie istotne semantycznie (zalecane)<br>
+                - znacznik em - kursywa istotne semantycznie (zalecane)<br>
+                - znacznik a - linki /łącza wewnątrz dokumentu<br>
+                <div class="margin__left--10">- atrybut href - wskazanie nazwy docelowego pliku<br>
+                - atrybut target - ??<br></div>
+                - znacznik img - obrazek o podanm adresie <br>
+                <div class="margin__left--10">- atrybut src - wskazanie nazwy docelowego pliku<br>
+                - atrybut alt - opis obrazka np. dla niewidomych "zdjęcie autora"<br></div>
+                - atrybut id - identyfikuje element (np. "href="#pamietniczek")<br>
+                - jeżeli nagłówek jest taki sam na więcej niż jednej stronie to powinien być przed main<br>
+            </article>
+            <article>
+                <h3>Tydzień 4<br></h3>
+                <strong>04.04 Życie w pudełku 1<br></strong>
+                - vw - viewport width<br>
+                - vh - viewport height<br>
+                - element<br>
+                - padding - w klasie (np. "padding 0 0 0 16px;")<br>
+                - border<br>
+                - margin - np. "margin: 32px auto;"" oznacza margines górny i dolny 32px a lewy i prawy równo czyli wyśrodkowany<br>
+            </article>
+            <article>
+                <h3>Tydzień 5<br></h3>
+                <strong>05.02 Logika w JS<br></strong>
+                - skrócony IF - (zmienna1>zmienna2)?console.log('true'):console.log('false')<br>
+                <strong>05.03 JavaScript:funkcje<br></strong>
+                - function calculate(x){return x*7;}<br>
+                - DRY - don't repeat yourself<br>
+                - (Fat) arrow functions - (x) => {return x*7} i jeszcze prościej x => x*7;<br>
+                <h4>05.04 U mnie (nie) działa</h4>
+                - devtools -> Network -> Disable cache<br>
+                <h4>05.05 HTML:Listy, tabele ,definicje</h4>
+                <ul>
+                    <li>ul - unordered list</li>
+                    <li>ol - ordered list</li>
+                    <li>li - list item</li>
+                    <li>list-style - style listy</li>
+                    <li>nav - nawigacja</li>
+                    <li>dl - description list</li>
+                    <li>dt - description term</li>
+                    <li>dd - description details</li>
+                    <li>table - tabela</li>
+                    <li>tr - table row (wiersz tabeli)</li>
+                    <li>td - table data (komórka tabeli)</li>
+                    <li>thead - nagłówek tabeli</li>
+                    <li>th - komórka w nagłówku tabeli np. opis kolumny</li>
+                    <li>tbody - ciało tabeli</li>
+                    <li>caption - opis tabeli</li>
+                </ul>
+                <h4>05.06 Normalizacja vs reset</h4>
+                <ul>
+                    <li>reset</li>
+                    <li><a href="https://necolas.github.io/normalize.css/">normalizacja</a></li>
+                </ul>
+                <h4>05.07 Flexbox</h4>
+                <ul>
+                    <li>display: flex</li>
+                    <li>flex-direction: <em>row</em>, column, row-reverse, column-reverse</li>
+                    <li>flex-wrap: <em>nowrap</em>, wrap, wrap-reverse</li>
+                    <li>flex-flow - połączenie flex-direction i flex-wrap </li>
+                    <li>justify-content: <em>flex-start</em>, flex-end, center, space-between, space-around (ustawianie elementów wzdłuż osi flex-direction)</li>
+                    <li>align-content: <em>stretch</em>, flex-start, flex-end, center, space-between, space-around (ustawianie elementów wzdłuż osi prostopadłej do flex-direction)</li>
+                    <li>align-items: stretch, <em>flex-start</em>, flex-end, center, baseline (ustawianie elementów wzdłuż osi prostopadłej do flex-direction w obrębie pojedynczego wiersza)</li>
+                    <li>align-self: stretch, <em>flex-start</em>, flex-end, center, baseline (ustawianie <strong>elementu</strong> wzdłuż osi prostopadłej do flex-direction w obrębie pojedynczego wiersza)</li>
+                    <li>order: <em>0</em>, liczba całkowita (-/+) (kolejność)</li>
+                    <li>flex-grow: <em>0</em>, liczba/proporcja</li>
+                    <li>flex-shrink: <em>0</em>, liczba/proporcja</li>
+                    <li>flex-basis: <em>none</em>, rozmiar bazowy</li>
+                    <li>flex: flex-grow <em>flex-shrink</em> flex-basis - połączenie powyższych w jednej linii</li>
+                </ul>
+                <h4>05.08 Tła</h4>
+                <ul>
+                    <li>background-image: url('ścieżka do pliku') ścieżka względem pliku CSS a nie HTML</li>
+                    <li>background-position: <em>0</em>, top, bottom, center, xx%, xxpx,... <strong>i druga kolumna</strong> 0, right, left, center, xx%, xxpx</li>
+                    <li>background-repeat: <em>repeat</em>, repeat-x, repeat-y, no-repeat, round, space</li>
+                    <li>backgroud-attachment: <em>scroll</em>, fixed, local</li>
+                    <li>background-origin: <em>padding-box</em>, border-box, content-box</li>
+                    <li>backgroud-clip: <em>padding-box</em>, border-box, content-box</li>
+                    <li>background-color: (wersja skrócona "background:")
+                    <ul>
+                        <li>rgb(a) np. rgb(255,255,255,0.4)</li>
+                        <li>linear-gradient(kąt,rgb1, rgb2, rgb3, rgb4)</li>
+                    </ul>
+                    <li>background-size: <em>auto</em>, cover, contain, width height</li>
+                    <li><a href="https://cssgradient.io/gradient-backgrounds/">Strona z gradientami</a></li>
+                </ul>
+                <h4>05.09 Grafik cięcie - też zajęcie</h4>
+                <ul>
+                    <li><a href="www.figma.com">www.figma.com</a></li>
+                    <li>uruchomienie Visual Code Studio z wiersza poleceń -> w katalogu docelowym "code ."</li>
+                    <li>reset GitHub:</li>
+                    <ul>
+                        <li>config --global --unset credential.helper</li>
+                        <li>config credential.helper store</li>
+                    </ul>
+                    <li><a href="https://flexboxfroggy.com/#pl"> flexbox froggy</a></li>
+                </ul>
+                </article>
+                <article>
+                <h3>Tydzień 6<br></h3>
+                <h4>06.02 Formularze</h4>
+                <ul>
+                    <li>>form</li>
+                    <ul>
+                        <li>>label</li>
+                            <ul>
+                                <li>for="nazwa pola"</li>
+                            </ul>
+                        <li>>input</li>
+                            <ul>
+                                <li>name= - identyfikator pola (nazwa zmiennej)</li>
+                                <li>id= - opis pola ("id" musi się równać "label for"</li>
+                                <li>type= - </li>
+                                <ul>
+                                    <li>text</li>
+                                    <ul>
+                                        <li>placeholder= - podpowiadacz</li>
+                                    </ul>
+                                    <li>radio - grupowane wg "input name"</li>
+                                    <ul>
+                                        <li>checked= -</li>
+                                    </ul>
+                                    <li>checkbox np. type="checkbox" chcked value="krowa" name="mycheckbox" id="mycheckbox1</li>
+                                    <ul>
+                                        <li>checked value - wartość przesyłana na serwer po zaznaczeniu pola</li>
+                                    </ul>
+                                    <li>number</li>
+                                    <li>tel</li>
+                                    <li>email</li>
+                                    <li>range</li>
+                                    <ul>
+                                        <li>min=</li>
+                                        <li>max=</li>
+                                        <li>step=</li>
+                                    </ul>
+                                    <li>password</li>
+                                    <li>value=</li>
+                                    <li>file</li>
+                                    <li>select</li>
+                                    <ul>
+                                        <li>>option</li>
+                                        <ul>
+                                            <li>value=</li>
+                                        </ul>
+                                    </ul>
+                                    <li>textarea - dłuższy tekst</li>
+                                    <li>submit</li>
+                                </ul>
+                                <li>required</li>
+                                <li>pattern= <a href="http://www.html5pattern.com/">html5pattern.com</a></li>
+                            </ul>
+                        <li>>fieldset</li>
+                        <ul>
+                            <li>>legend</li>
+                        </ul>
+                        <li>action=</li>
+                        <li>method= get, post</li>
+                        <li>enctype= application/x-www-form-urlncoded(wartość domyślna), multipart/form-data (kiedy wysyłamy pliki)</li>
+                    </ul>
+                </ul>
+                <h4>06.03 CSS: Grid</h4>
+                <ul>
+                    <li>display: grid (numeracja od 1 a nie od 0)</li>
+                    <li>grid-template-columns: wartość po spacji (np. 100px 200px 50px)</li>
+                    <li>grid-template-rows: wartość po spacji (np. 100px 200px 50px)</li>
+                    <li>fr - jednostka "ułamek wolnej przestrzeni"</li>
+                    <li>repaet (ileRazy, wartość</li>
+                    <li>grid-column-gap (rozmiar odstępu)</li>
+                    <li>grid-row-gap (rozmiar odstępu)</li>
+                    <li>minmax (minWartość, maxWartość)</li>
+                    <li>grid-template-areas: "header header header", "content.menu", "footer footer footer"</li>
+                    <li>grid-area: nazwa obszaru lub row-start / col-start / row-end / col-end</li>
+                    <li>grid-row-start: numer / [nazwa] / span</li>
+                    <li>grid-row-end: numer / [nazwa] / span</li>
+                    <li>grid-column-start: numer / [nazwa] / span</li>
+                    <li>grid-column-end: numer / [nazwa] / span</li>
+                    <li>z-index: np. -1</li>
+                    <li><a href="https://cssgridgarden.com/#pl">Grid Garden</a></li>
+                </ul>
+                <h4>06.04 CSS: Media queries</h4>
+                <ul>
+                    <li>RWD - Responsive web design</li>
+                    <li>@media <em>all</em> screen print ...</li>
+                    <li>media feature (and not ,) np. @media screen and (max-width: 640px)</li>
+                    <ul>
+                        <li>min-width</li>
+                        <li>max-width</li>
+                        <li>color</li>
+                        <li>aspect-ratio</li>
+                        <li>orientation</li>
+                        <li>...</li>
+                    </ul>
+                    <li>mobile first</li>
+                    <li>device toolbar w chromie</li>
+                </ul>
+                <h4>06.05 JS: Eventy</h4>
+                <ul>
+                    <li>>button np. </li>
+                    <li>element.addEventListener(type,listener [,options])</li>
+                    <li>type</li>
+                    <ul>
+                        <li>click</li>
+                        <li>mouseenter</li>
+                        <li>mouseleave</li>
+                        <li>mouseover</li>
+                        <li>... <a href="https://developer.mozilla.org/en-US/docs/Web/Events#Mouse_events"> więcej typów</a></li>
+                    </ul>
+                    <li>
+                        przykład: <br>
+                        const button = document.querySelector('.header__button--js');<br>
+                        function handleClick() {console.log('helo');}<br>
+                        button.addEventListener('click',handleClick);<br>
+                        lub prościej:<br>
+                        button.addeventListener('click', () => {console.log('helo arrow');});
+                    </li>
+                </ul>
+                <h4>06.06 Hamburger menu</h4>
+                <ul>
+                    <li>element.classList. add remove toggle contains (tutaj podajemy samą nazwę klasy bez kropki)</li>
+                    <li>przykład:<br>
+                        header.classList.add('header__title--red');</li>
+                    <li>przepis na hamburgera:</li>
+                    <ol>
+                        <li>nawigacja</li>
+                        <li>style do nawigacji na mobile</li>
+                        <li>style do nawigacji na desktop</li>
+                        <li>przycisk do pokazywania / ukrywania (zmiana klasy)</li>
+                        <li>kod JS do podpięcia się pod przycisk</li>
+                        <li>kod JS do zmiany klasy</li>
+                    </ol>
+                </ul>
+                <h4>06.07 GitHub Pages: statyczny hosting</h4>
+                <ol>
+                    <li>GitHub.com</li>
+                    <li>w repozytorium Settings</li>
+                    <li>GitHub Pages</li>
+                    <li>wybrać źródło - master branch</li>
+                </ol>
+                <h3>Tydzień 7<br></h3>
+                <h4>07.02 JS: Obiekty, obiekty</h4>
+                <ul>
+                    <li>key: value,</li>
+                    <li>zmienne nazywamy własnościami (properties)</li>
+                    <li>funkcje nazywamy metodami</li>
+                    <li> dot notation np. console.log(deathstar.population)</li>
+                    <li>bracket notation np. console.log(deathstar["population"])</li>
+                    <li>JSON- JavaScript Object Notation (obiekt zapisany w odpowiedni sposób umożliwiający przesłanie przez serwer (bez metod, tylko własności zapisane w cudzysłowiu np."name": "Deathstar", lub "population": 10000,)</li>
+                </ul>
+                <h4>07.03. Pseudoelementy & Pseudoselektory</h4>
+                <ul>
+                    <li>pseudoelementy (z podwójnym dwukropkiem)</li>
+                    <ul>
+                        <li>element::before</li>
+                        <li>content: "treść"</li>
+                        <li>element::after</li>
+                        <ul>
+                            <li>przykład:<br>
+                                .day__header::before{<br>
+                                content = "-" <strong>(ta linia musi być żeby wyświetlił się element)</strong><br>
+                                width: 16px;<br>
+                                }<br>
+                            </li>
+                        </ul>
+                    </ul>
+                    <li>pseudoklasy (z pojedynczym dwukropkiem)</li>
+                    <ul>
+                        <li>selektor:</li>
+                        <ul>
+                            <li>hover przykład: .navigation__link:hover{color: hotpink;}</li>
+                            <li>visited</li>
+                            <li>focus</li>
+                            <li>first-child</li>
+                            <li>last-child</li>
+                            <li>not(selektor) przykład: .day:not(.day__special) {background: violet;}</li>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">więcej selektorów</a></li>
+                        </ul>
+                    </ul>
+                </ul>
+                <h4>07.04. SAAS</h4>
+                <ul>
+                    <li>SASS to preprocesor CSS</li>
+                    <li>SASS potrzebuje narzędzia do działania</li>
+                    <li>SASS vs SCSS (dwie różne składnie)</li>
+                    <li>.scss (dla programisty) -> .scc (dla przeglądarki)</li>
+                    <li><a href="https://www.sassmeister.com/"> www.sassmeister.com</a></li>
+                    <li>$zmienna np. $myfavouritegrey: #ccc;</li>
+                    <li>@mixin @include</li>
+                        <ul>
+                        <li>przykład:<br>
+                        @mixin borderBackground{ border-radius: 10px;}<br>
+                        .main{@include borderBacground;}</li>
+                        </ul>
+                    <li>@extend</li>
+                    <li>& czyli parent selector</li>
+                    <ul>
+                        <li>przykład:<br>
+                        .about-sass {<br>
+                        color: red;<br>
+                        &__title {<br>
+                        font-size: 20px;}<br>
+                        }</li>
+                    </ul>
+                </ul>
+                <h4>07.05. Node.js & NPM</h4>
+                <ul>
+                    <li><a href="https://nodejs.org/en/">https://nodejs.org/en/</a></li>
+                    <li>node to taki javascript uruchamiany poza przeglądarką</li>
+                    <li>node nie ma dostępu do DOM</li>
+                    <li>uruchamianie przez "node skrypt.js"</li>
+                    <li>NPM - node package manager (skrzynka z narzędiami których możemy użyć w naszym projekcie)</li>
+                    <li><a href="https://www.npmjs.com/">https://www.npmjs.com/</a></li>
+                    <li>w wierszu poleceń: npm init (gdy tworzymy nowy projekt i to stworzy plik JSON np. "package.json")</li>
+                    <li>w wierszu poleceń: npm install moment</li>
+                    <li>nie commitujemy node_modules</li>
+                    <li>git ignore</li>
+                    <li>alternatywa dla NPM to YARN</li>
+                </ul>
+                <h4>07.06. WTF GULP STARTER KIT</h4>
+                <li>git clone https://github.com/maciejkorsan/wtf-gulp-starter</li>
+                <li>stworzyć nowy projekt np. homepage-gulp</li>
+                <li>skopiować do nowego katalogu wszystkie pliki ze startera</li>
+                <li>stworzyć repozytorium o nazwie jak nazwa projektu/katalogu</li>
+                <li>w wierszu poleceń zainicjalizować repozytorium lokalne komendami z github.com z sekcji "…or create a new repository on the command line"</li>
+                <li>jeżeli w nowym projekcie nie ma .gitignore to go stworzyć i dodać w nim "node-modules"</li>
+                <li>git add .</li>
+                <li>git commit -m "initial commit"</li>
+                <li>git push</li>
+                <li>npm install -g gulp-cli (instalacja globalna GULP - raz na system)</li>
+                <li>npm install (instalacja zależności npm)</li>
+                <li>gulp</li>
+                <li>ctrl+c kończy pracę gulp</li>
+                <li><strong>nie edytujemy nic w katalogu dist!!</strong></li>
+                <li>npm run deploy</li>
+            </article>
+        </content>
+        <footer>
+            
+        </footer>
+    </main>
+</body>
+
+</html>

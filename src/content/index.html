@@ -30,11 +30,35 @@
       href="assets/pwa/icons/icon-192x192.png"
     />
 
-    <link rel="stylesheet" href="css/main.css" />
+    <link href="css/main.css" rel="stylesheet"  />
+    
   </head>
-  <body>
-    <h1>Hello world - with simple PWA support!</h1>
-
-    <script src="js/main.js"></script>
+  <body class="body index__body">
+    <main class="main index__main">
+      <header class="site_header">
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item"><a href="notatkiWTF.html">Notatki WTF</a></li>
+            <li class="navigation__item"><a href="kalendarzWzor.html">Kalendarze</a></li>
+          </ul>
+        </nav>
+        <h1>Radek Szebla - Strona domowa</h1>
+      </header>
+      <content class="content">
+        <section>
+            <h3><a class="link" href = "notatkiWTF.html" >Notatki WTF</a></h3>
+        </section>
+        <section>
+          <h2>Kalendarze:</h2>
+          <section>
+            <h3><a class="link" href = "kalendarzWzor.html" >otwarcie sklepu - wzór.</a></h3>
+          </section>
+        </section>
+      </content>
+      <footer class="footer">
+        Strona domowa Radka Szebli.
+      </footer>
+    </main>
+    <script src="js/main.js" ></script>
   </body>
 </html>

@@ -358,21 +358,146 @@
                     <li>alternatywa dla NPM to YARN</li>
                 </ul>
                 <h4>07.06. WTF GULP STARTER KIT</h4>
-                <li>git clone https://github.com/maciejkorsan/wtf-gulp-starter</li>
-                <li>stworzyć nowy projekt np. homepage-gulp</li>
-                <li>skopiować do nowego katalogu wszystkie pliki ze startera</li>
-                <li>stworzyć repozytorium o nazwie jak nazwa projektu/katalogu</li>
-                <li>w wierszu poleceń zainicjalizować repozytorium lokalne komendami z github.com z sekcji "…or create a new repository on the command line"</li>
-                <li>jeżeli w nowym projekcie nie ma .gitignore to go stworzyć i dodać w nim "node-modules"</li>
-                <li>git add .</li>
-                <li>git commit -m "initial commit"</li>
-                <li>git push</li>
-                <li>npm install -g gulp-cli (instalacja globalna GULP - raz na system)</li>
-                <li>npm install (instalacja zależności npm)</li>
-                <li>gulp</li>
-                <li>ctrl+c kończy pracę gulp</li>
-                <li><strong>nie edytujemy nic w katalogu dist!!</strong></li>
-                <li>npm run deploy</li>
+                <ul>
+                    <li>git clone https://github.com/maciejkorsan/wtf-gulp-starter</li>
+                    <li>stworzyć nowy projekt np. homepage-gulp</li>
+                    <li>skopiować do nowego katalogu wszystkie pliki ze startera</li>
+                    <li>stworzyć repozytorium o nazwie jak nazwa projektu/katalogu</li>
+                    <li>w wierszu poleceń zainicjalizować repozytorium lokalne komendami z github.com z sekcji "…or create a new repository on the command line"</li>
+                    <li>jeżeli w nowym projekcie nie ma .gitignore to go stworzyć i dodać w nim "node-modules"</li>
+                    <li>git add .</li>
+                    <li>git commit -m "initial commit"</li>
+                    <li>git push</li>
+                    <li>npm install -g gulp-cli (instalacja globalna GULP - raz na system)</li>
+                    <li>npm install (instalacja zależności npm)</li>
+                    <li>gulp</li>
+                    <li>ctrl+c kończy pracę gulp</li>
+                    <li><strong>nie edytujemy nic w katalogu dist!!</strong></li>
+                    <li>npm run deploy</li>
+                </ul>
+                <h4>08.02. CSS: Prefixy</h4>
+                <ul>
+                    <li>-moz-</li>
+                    <li>-ms-</li>
+                    <li>-webkit-</li>
+                    <li><a href="https://caniuse.com">caniuse.com</a></li>
+                    <li><a href="https://autoprefixer.github.io/">autoprefixer.github.io</a></li>
+                    <li>autoprefixer jest zawartyw kursowym "Starter Kit"</li>
+                </ul>
+                <h4>08.03. Google Fonts</h4>
+                <ul>
+                    <li><a href="https://fonts.google.com">fonts.google.com</a></li>
+                    <ul>
+                        <li>przetestować czy sa polskie znaki "zażółć gęślą jażń"</li>
+                        <li>zaznaczyć grubości</li>
+                        <li>zaznaczyć "latin extended"</li>
+                        <li>dodać import do pliku .css np: "@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap&subset=latin-ext');</li>
+                        <li>zastosowanie -> font-family: 'Lato';</li>
+                    </ul>
+                    <li>@font-face</li>
+                </ul>
+                <h4>08.04. GIT: Branche</h4>
+                <ul>
+                    <li>git branch - wypisuje obecne gałęzie</li>
+                    <li>git branch <em>nazwa gałęzi</em></li>
+                    <li>git checkuot - zmienia gałąź</li>
+                    <li>git push --set-upstream origin <em>nazwa gałęzi</em></li>
+                    <li>git merge <em>nazwa gałęzi z której kopiujemy</em> (jesteśmy na gałązi na którą kopijemy)</li>
+                </ul>
+                <h4>08.05. Markdown</h4>
+                <ul>
+                    <li>Markdown to język znacznikowy taki jak HTML - używany do edycji readme.md</li>
+                </ul>
+                <h4>08.06. JS: tablice</h4>
+                <ul>
+                    <li><em>obiekt</em>{name: krowa, height: 180cm}</li>
+                    <li>const <em>nazwa</em> = [<em>element0</em>, <em>element1</em>, <em>element2</em>];</li>
+                    <li><em>tablica</em>.length</li>
+                    <li><em>tablica</em>.push(<em>element</em>) - dodaje element na końcu tablicy</li>
+                    <li><em>tablica</em>.unshift(<em>element</em>) - dodaje element na początku tablicy</li>
+                    <li><em>tablica</em>.shift() - usuwa pierwszy element tablicy</li>
+                    <li><em>tablica</em>.pop() - usuwa ostatni element tablicy</li>
+                    <li><em>tablica</em>.indexOf(<em>element</em>) - sprawdza czy element istnieje w tablicy jeżeli istnieje to zwraca jego index jeżeli nie ma to zwraca "-1"</li>
+                    <li><em>tablica</em>.splice(<em>start</em>,<em>liczbaElementów</em>) - usuwa n elementów od podanego indexu start tablicy</li>
+                    <li><em>tablica</em>.slice(<em>start</em>,<em>stop</em>) - pobiera elementy tablicy od indexu start do stop (bez stop)</li>
+                </ul>
+                <h4>08.07. JS: pętle</h4>
+                <ul>
+                    <li>i++ - postinkrementacja</li>
+                    <li>i-- - postdekrementacja</li>
+                    <li>++i - preinkrementacja</li>
+                    <li>--i - predekrementacja</li>
+                    <li>for(<em>inicjalizacja</em>; <em>warunekWykonania</em>, <em>wyrażenieInkrementacji</em>)  np. for(let i=6; i>3; i--)<br>
+                        {<br>
+                    <em>kod...</em><br>
+                    }</li>
+                    <li>let a=10;<br>
+                        while (a>0) {}</li>
+                    <li>do{}<br>
+                    while(a>0)</li>
+                    <li>for(<em>własność</em> in <em>obiekt</em>) {}</li>
+                    <li>for(<em>element</em> of <em>tablica</em>) {}</li>
+                    <ul>
+                        <li>przykład:</li>
+                        <li>for(let face of faces) </li>
+                        <li>{console.log(face);}</li>
+                    </ul>
+                </ul>
+                <h4>08.08. JS: Przechowywanie danych</h4>
+                <ul>
+                    <li>cookies - devtools->application->cookies</li>
+                    <li>document.cookie - żeby odczytac ciastka np. console.log(document.cookie);</li>
+                    <li>document.cookie = "<em>nazwa</em>=<em>wartość</em>"; - żeby stworzyć ciastko</li>
+                    <li>web storage:</li>
+                    <ul>
+                        <li>localStorage - do ręcznego usuwania (trwalsze)
+                            <ul>
+                                <li>localStorage.setItem('<em>klucz</em>', <em>wartość</em>); lub dla obiektu localStorage.setItem('<em>klucz</em>', JSON.stringify(<em>obiekt</em>));</li>
+                                <li>const '<em>nazwa</em>' = localStorage.getItem('<em>klucz</em>'); lub dla obiektu const '<em>nazwa</em>' = JSON.parse(localStorage.getItem('<em>klucz</em>'));</li>
+                                <li>localStorage.removeItem('<em>klucz</em>');</li>
+                            <ul>
+                                <li>przykład:</li>
+                                <li>const input = document.querySelector('.input--js');</li>
+                                <li>if (localStorage.getItem('input')) {</li>
+                                <li>input.value = localStorage.geiItem('input');</li>
+                                <li>{</li>
+                                <li>input.addEventListener('keyup', (e) => {</li>
+                                <li>localStorage.setItem('input', e.target.value);</li>
+                                <li>});</li>
+                            </ul>
+                            </ul>
+                        <li>sessionStorage - do zamknięcia sesji (zakładki przeglądarki)</li>
+                        <li>follow '<strong>react</strong>'</li>
+                   </ul>
+                </ul>
+                <h4>08.09. Frontendowiec vs projektowanie graficzne</h4>
+                <ul>
+                    <li>Kolejność działań:</li>
+                    <ol>
+                        <li>zacznij od prawdziwej treści</li>
+                        <li>naszkicuj wstępny układ na papierze</li>
+                        <li>porzuć wizję strony idealnej, zacznij od najniższego poziomu, który daje jakąś wartość</li>
+                        <li>działaj "krok po kroku" (one step a time)</li>
+                        <li>trzymaj sie siatki / grida graficznego</li>
+                        <li>zacznij od czarnego / białego / odcieni szarości</li>
+                        <li>kolry zastaw na koniec i ogranicz ich liczbę do minimum</li>
+                        <li>nie wymyślaj koła na nowo</li>
+                        <li>wykorzystaj gotowe elementy / znajdź UI KIT</li>
+                        <li>kopiuj</li>
+                    </ol>
+                    <li>Strony inspiracyjne:</li>
+                    <ul>
+                        <li><a href="https://dribbble.com/">https://dribbble.com/</a></li>
+                        <li><a href="https://www.behance.net/">https://www.behance.net/</a></li>
+                        <li><a href="https://refactoringui.com/">https://refactoringui.com/</a></li>
+                        <li><a href="https://www.awwwards.com/websites/">https://www.awwwards.com/websites/</a></li>
+                        <li><a href="https://www.siteinspire.com/">https://www.siteinspire.com/</a></li>
+                        <li><a href="https://codepen.io/">https://codepen.io/</a></li>
+                        <li><a href="https://tympanus.net/codrops/">https://tympanus.net/codrops/</a></li>
+                        <li><a href="https://www.cssdesignawards.com/">https://www.cssdesignawards.com/</a></li>
+                    </ul>
+                    <li><a href="https://pdkit.co/">https://pdkit.co/</a></li>
+                </ul>
             </article>
         </content>
         <footer>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>notatkiWTF</title>
     <link href="css/main.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -497,6 +497,107 @@
                         <li><a href="https://www.cssdesignawards.com/">https://www.cssdesignawards.com/</a></li>
                     </ul>
                     <li><a href="https://pdkit.co/">https://pdkit.co/</a></li>
+                </ul>
+                <h4>09.02. Z kim pracuje frontendowiec</h4>
+                <ul>
+                    <li>współpracownicy</li>
+                    <ul>
+                        <li>backendowcy</li>
+                        <li>UX-owcy (user experience)</li>
+                        <li>UI-owcy (user interface), graficy, projektanci</li>
+                        <li>testerzy, QA (quality assurance)</li>
+                        <li>PM (project manager)</li>
+                        <li>SEO (search engine optimisation - pozycjonowanie w wynikach wyszukiwania)</li>
+                        <li>analitycy</li>
+                        <li>copywriter</li>
+                        <li>content editor</li>
+                        <li>DevOps</li>
+                        <li>CEO CTO CMO CIO C..</li>
+                        <li>cała reszta...</li>
+                    </ul>
+                </ul>
+                <h4>09.03. Animation & transition</h4>
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties">https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties</a></li>
+                    <li>transition: <em>name  duration  timing function  delay</em></li>
+                    <ul>
+                        <li>przykład:<br>
+                            &__load {<br>
+                            backgound: #fff;<br>
+                            transition: background 0.3s linear 1s;<br>
+                            &:hover {<br>
+                            background: #D3D4D8;<br>
+                            }}</li>
+                    </ul>
+                    <li>will-change: <em>name</em> (włącza przyspieszenie sprzętowe)</li>
+                    <li>transform:</li>
+                    <ul>
+                        <li>rotate()</li>
+                        <li>scale()</li>
+                        <ul>
+                            <li>przykład:<br>
+                            transition: transform 1s easy-in-out;<br>
+                            &:hover {<br>
+                            transform: scale(2);<br>
+                            }</li>
+                        </ul>
+                        <li>translate()</li>
+                    </ul>
+                    <li>animation: @keyframes duration | timing-function | delay | iteration-count | direction | fill-mode | play-state | name</li>
+                    <ul>
+                        <li>przykład:<br>
+                        @keyframes backgroundChange {<br>
+                        from {<br>
+                        background: blue;<br>
+                        }<br>
+                        to {<br>
+                        background: red;<br>
+                        }}<br>
+                        <em>i w obiekcie dodać:</em> animation: backgroundChange 5s linear infinite;</li>
+                    </ul>
+                </ul>
+                <h4>09.04. SVG (scalabel vector graphics)</h4>
+                <ul>
+                    <li>raster vs vector</li>
+                    <li>SVG jest idealne dla logo</li>
+                    <li>kod źródłowy SVG można wstawić do pliku HTML</li>
+                    <li>znacznik g pozwala grupować elementy</li>
+                </ul>
+                <h4>09.05. Head & OpenGraph</h4>
+                <ul>
+                    <li>meta name="description" content="" - opis strony na liście wyników wyszukiwarki</li>
+                    <li>icon - </li>
+                    <li>Open Graph</li>
+                    <li><a href="https://developers.facebook.com/tools/debug/">https://developers.facebook.com/tools/debug/</a></li>
+                </ul>
+                <h4>09.06. WCAG</h4>
+                <ul>
+                    <li>Web Accessibility Initiative</li>
+                    <li>Web Content Accessibility Guildlines</li>
+                    <li><a href="http://widzialni.org/">http://widzialni.org/</a></li>
+                    <li>porady:</li>
+                    <ul>
+                        <li>pisz semantycznie</li>
+                        <li>trzymaj kontrast <a href="https://color.a11y.com/Contrast/">https://color.a11y.com/Contrast/</a></li>
+                        <li>dobrze dobierz kolory <a href="http://colorsafe.co/">http://colorsafe.co/</a></li>
+                        <li>unikaj autoplay</li>
+                        <li>nie ograniczaj rzeczy czasowo</li>
+                        <li>nie usuwaj :focus</li>
+                        <li>używaj alt (i kończ opisy kropką!)</li>
+                        <li>Accessible Rich Internet Applications <a href="https://www.w3.org/WAI/standards-guidelines/aria/">https://www.w3.org/WAI/standards-guidelines/aria/</a></li>
+                    </ul>
+                </ul>
+                <h4>09.07. PWA - Progressive Web Apps</h4>
+                <ul>
+                    <li>pozwala na tworzenie "natywnych" aplikacji bez konieczności nauki nowych technologii (powiadomienia, aparat itp)</li>
+                    <li>łatwa aktualizacja i dystrybucja</li>
+                    <li>działają offline!</li>
+                    <li>technologia wciąż w trakcie silnego rozwoju (ale ma już trochę stabilnych rzeczy)</li>
+                    <li>jak stworzyć:</li>
+                    <ol>
+                        <li>stworzyć manifest.json i załączyć w HTML przez "link rel=manifest href="manifest.json" <a href="https://app-manifest.firebaseapp.com/">https://app-manifest.firebaseapp.com/</a></li>
+
+                    </ol>
                 </ul>
             </article>
         </content>

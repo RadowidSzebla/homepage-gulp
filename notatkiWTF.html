@@ -595,9 +595,100 @@
                     <li>jak stworzyć:</li>
                     <ol>
                         <li>stworzyć manifest.json i załączyć w HTML przez "link rel=manifest href="manifest.json" <a href="https://app-manifest.firebaseapp.com/">https://app-manifest.firebaseapp.com/</a></li>
-                        <li>servisworker.js (już stworzony w starter kit)</li>
+                        <li>serviceworker.js (już stworzony w starter kit)</li>
                     </ol>
                 </ul>
+                <h4>10.02. JS: praca z API/JSON</h4>
+                <ul>
+                    <li>strony statyczne</li>
+                    <li>pobieranie danych "z zewnętrz"</li>
+                    <li>API - application programming interface</li>
+                    <ul>
+                        <li>pozwala na wykonywanie operacji (np. pobieranie, dodawanie, usuwanie, modyfikacja) w aplikacji, bez konieczności znania jej budowy (od środka)</li>
+                        <li>JS udostępnia nam szereg różnych API</li>
+                        <li>wiele gotowych produktów udostępnia nam swoje API (google, slack, github itp.)</li>
+                    </ul>
+                    <li>REST - representational state transfer</li>
+                    <li>GraphQL - warto się zainteresować</li>
+                    <li>API GitHub - <a href="https://developer.github.com/v3">https://developer.github.com/v3</a></li>
+                    <li><a href="https://www.getpostman.com/downloads/">POSTMAN</a></li>
+                    <li>FETCH API</li>
+                    <ul>
+                        <li>przykład:<br>
+                        fetch("https://api.github.com/users/maciekwtf/repos")<br>
+                        .then(resp => resp.json())<br>
+                        .then(resp => {<br>
+                        // w resp mamy jsona z odpowiedzią<br>
+                        })</li>
+                    </ul> 
+                    <li>PROMISE</li>
+                    <li>asynchroniczność</li>
+                    <li><a href="https://codepen.io/pen/">codepen</a></li>
+                </ul>
+                <h4>10.03. U mnie działa: testujemy nasze strony na różnych przeglądarkach</h4>
+                <ul>
+                    <li><a href="https://browserstack.com">browserstack.com</a> - <strong>płatna</strong> strona do testowania naszej strony</li>
+                    <li><a href="http://browsershots.org">browsershots.org</a></li>
+                    <li><a href="https://crossbrowsertesting.com">crossbrowsertesting.com</a></li>
+                    <li><a href="https://www.virtualbox.org">www.virtualbox.org</a></li>
+                    <li>Microsoft udostępnia obrazy swoich przeglądarek <a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/">developer.microsoft.com/en-us/microsoft-edge/tools/vms/</a></li>
+                    <li>Progressive enhancement</li>
+                    <li>@supports - jeżeli dana przeglądarka nie obsługuje tego co jest w nawiasie po @supports to pominie zawartość nawiasu np.: @supports (display: grid) {<em>pomijana zawartość</em>}</li>
+                </ul>
+                <h4>10.04. Optymalizacja: lighthouse, minifikacja zasobów, krytyczny CSS</h4>
+                    <ul>
+                        <li><a href="https://www.youtube.com/watch?v=_fNp37zFn9Q">czy 300 ms to dużo?</a></li>
+                        <li>DevTools -> Network</li>
+                        <li>DevTools -> Audits</li>
+                        <li><a href="https://web.dev">web.dev</a></li>
+                        <li><a href="https://tinypng.com">tinypng.com - strona do kompresowania zdjęć</a></li>
+                        <li>czy potrzebujemy wszytskich paczek?</li>
+                        <li>czy potrzebujemy całego frameworka (np. bootstrap)?</li>
+                        <li>minifikacja - <a href="https://cssminifier.com">cssminifier.com</a></li>
+                        <li>obfuskacja / uglify - <a href="https://skalman.github.io/UglifyJS-online/">skalman.github.io/UglifyJS-online/</a></li>
+                        <li>CSS krytyczny - <a href="https://web.dev/extract-critical-css">web.dev/extract-critical-css</a></li>
+                        <li>source map - umożliwia podgląd kodu źródłowego "czytelnego" pomimo minifikacji</li>
+                    </ul>
+                <h4>10.05. WTF: JS - kilka fajnych pojęć</h4>
+                    <ul>
+                        <li>hoisting - jeżeli coś jest zdefiniowane niżej to jest to zdefiniowane wyżej - lokalizacja definicji nie jest istotna (działa zawsze) - nie mylić z przypisywaniem wartości</li>
+                        <li>"use strict"; - wykrywacz błędów</li>
+                        <li>destrukturyzacja - pozwala wyciągnąć poszczególne zmienne z obiektu np.:
+                            <ul>
+                                <li>const person {'name'=maciek, age=31, miasto='bialystok'}<br>const {name, age} = person;<br>console.log(name);</li>
+                                <li>const food = ['pizza', 'burger', 'kiszony'];<br>const [firstFood, secondFood] = food;<br>console.log(firstFood);</li>
+                            </ul>
+                        <li>spread operator np.:</li>
+                            <ul>
+                                <li>const sum = (a,b) => {return a+b}<br>
+                                const numbers = [1,6];<br>
+                                console.log(sum(...numbers))</li>
+                            </ul>
+                    </ul>
+                    <h4>10.06. rem / em / typografia</h4>
+                    <ul>
+                        <li>font-size</li>
+                        <li>font-family</li>
+                        <li>font-weight</li>
+                        <li>line-height</li>
+                        <li>letter-spacing</li>
+                        <li>em - jednostka zależna - bierze wartość z najbliżej znalezionej definicji w trakcie przeszukiwania rodziców<br>
+                            1 em = font-size dla elementu (dziedziczony / ustawiony) *1</li>
+                        <li>rem - jednostka pobierająca wartość z HTML<br>
+                            1 rem = font-size dla root elementu *1</li>
+                        <li><a href="https://offroadcode.com/rem-calculator">offroadcode.com/rem-calculator</a></li>
+                        <li>nie każda przeglądarka ma domyślnie ustawione font-size na 16px!</li>
+                        <li>zalecane jest nie ustawianie font-size - jeżeli już trzeba to na 16px</li>
+                    </ul>
+                    <h4>10.07. FAQ</h4>
+                    <ul>
+                        <li>jak ładować javascript w zależności od strony na której się znajdujemy - wprowadzając ograniczenia w wykonywaniu kodu JS - plik JS pozostaje jeden</li>
+                        <li>obrazek na stronie mi się nie ładuje - sprawdź ścieżkę do pliku w DIST (a nie w SRC)</li>
+                        <li>jak bardzo mogę zagnieżdżać BEM? - przestrzegamy block element (nie robimy więcej poziomów zagnieżdżeń).</li>
+                        <li>czemu moja strona na GitHub Pages się nie aktualizuje? - każdorazowo trzeba uruchamiać "npm run deploy"</li>
+                        <li>kiedy flexbox, a kiedy grid? - </li>
+                        <li>jak zrobić coś w gicie? - <a href="https://gitexplorer.com/">gitexplorer.com/</a></li>
+                    </ul>
             </article>
         </content>
         <footer>

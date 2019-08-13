@@ -689,6 +689,67 @@
                         <li>kiedy flexbox, a kiedy grid? - </li>
                         <li>jak zrobić coś w gicie? - <a href="https://gitexplorer.com/">gitexplorer.com/</a></li>
                     </ul>
+                    <h4>11.02. Multimedia</h4>
+                    <ul>
+                        <li>audio</li>
+                        <ul>
+                            <li>controls - wyświetla playera (bez tego nie "audio" się nie wyświetla)</li>
+                            <li>autoplay - mocno ograniczany przez Chrome</li>
+                            <li>loop</li>
+                        </ul>
+                        <li>video</li>
+                        <ul>
+                            <li>controls - wyświetla playera</li>
+                            <li>.play</li>
+                            <li>.pause</li>
+                            <li>.currentTime = 0;</li>
+                        </ul>
+                        <li>iframe</li>
+                    </ul>
+                    <h4>11.03. Bootstrap</h4>
+                    <ul>
+                        <li>framework CSS i JS pozwalając na szybkie budowanie aplikacji które nieźle wyglądają</li>
+                        <li>popularny, wykorzystywany w wielu projektach i gotowych szablonach</li>
+                        <li>zawiera większość rzeczy, których potrzebujesz (i jeszcze więcej takich, o których nie masz pojęcia ;))</li>                        
+                    </ul>
+                    <h4>11.04. CSS ~ + > [ ]</h4>
+                    <ul>
+                        <li>"+" selektor bezpośredniego rodzeństwa np. <strong>.item + li{}</strong> wybierze pierwsze li po danym elemencie</li>
+                        <li>"~" selektor ogólnego rodzeństwa np. <strong>.item ~ li{}</strong> wybierze wszytkie li po danym elemencie</li>
+                        <li>">" selektor bezpośredniego dziecka np. <strong>.item > li{}</strong> wybierze wszytkie dzieci li danego elementu (bez dzieci dzieci)</li>
+                        <li>"[]" selektor atrybutów np. <strong>[href] {color: red;}</strong></li>
+                        <li>= - dokładna wartość</li>
+                        <li>*= - zawiera</li>
+                        <li>^= - zaczyna się</li>
+                        <li>$= - kończy się</li>
+                    </ul>
+                    <h4>11.05. Licencje, grafiki, materiały</h4>
+                    <ul>
+                        <li>Co mogę opublikować na swojej stronie?</li>
+                        <li><a href="https://tldrlegal.com/">strona do sprawdzania licencji</li>
+                        <li><a href="http://korsan.pl/jak-stracilem-ponad-120-000-pln-przez-1100-sekundy/">jak straciłem ponad 120 000 pln przez 1/100 sekundy</a></li>
+                        <li>darmowe materiały:</li>
+                        <ul>
+                            <li><a href="https://undraw.co">https://undraw.co</a></li>
+                            <li><a href="https://flaticon.com">https://flaticon.com</a></li>
+                            <li><a href="https://www.drawkit.io/">https://www.drawkit.io/</a></li>
+                            <li><a href="https://unsplash.com">https://unsplash.com</a></li>
+                            <li><a href="https://pixabay.com/pl/">https://pixabay.com/pl/</a></li>
+                            <li><a href="https://ccsearch.creativecommons.org/">https://ccsearch.creativecommons.org/</a></li>
+                        </ul>
+                    </ul>
+                    <h4>11.06. use.github.io</h4>
+                    <ol>
+                        <li>załóż puste repozytorium <em>twojanazwa</em>.github.io</li>
+                        <li>sklonuj na komputer</li>
+                        <li>wejdź w terminalu do katalogu z projektem</li>
+                        <li>"git checkout -b source"</li>
+                        <li>wgrywamy starterkit</li>
+                        <li>"gir push --set-upstream origin source"</li>
+                        <li>na githubie ustawiamy jako domyślny branch <em>source</em></li>
+                        <li>edytujemy package.json: "deploy": "gh-pages -d dist -b master"</li>
+                    </ol>
+                    <h4>11.07. Projekt od A do ...</h4>
             </article>
         </content>
         <footer>
